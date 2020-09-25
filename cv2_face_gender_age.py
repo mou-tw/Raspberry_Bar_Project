@@ -15,14 +15,14 @@ pic_link = ''
 conf_threshold=0.8
 
 #模型位址
-faceProto = "E:\\recipe_bot\side_app\AgeGender\opencv_face_detector.pbtxt"
-faceModel = "E:\\recipe_bot\side_app\AgeGender\opencv_face_detector_uint8.pb"
+faceProto = "./models/opencv_face_detector.pbtxt"
+faceModel = "./models/opencv_face_detector_uint8.pb"
 
-ageProto = "E:\\recipe_bot\side_app\AgeGender\\age_deploy.prototxt"
-ageModel = "E:\\recipe_bot\side_app\AgeGender\\age_net.caffemodel"
+ageProto = "./models/age_deploy.prototxt"
+ageModel = "./models/age_net.caffemodel"
 
-genderProto = "E:\\recipe_bot\side_app\AgeGender\gender_deploy.prototxt"
-genderModel = "E:\\recipe_bot\side_app\AgeGender\gender_net.caffemodel"
+genderProto = "./models/gender_deploy.prototxt"
+genderModel = "./models/gender_net.caffemodel"
 
 # Load network
 ageNet = cv2.dnn.readNet(ageModel, ageProto)
