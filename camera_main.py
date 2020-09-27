@@ -1,6 +1,7 @@
 import os
 import picamera
 import time
+import datetime
 
 def take_photo():
     path = './pic/{}/'.format(str(datetime.date.today()))
@@ -10,7 +11,7 @@ def take_photo():
     camera = picamera.PiCamera()
     # camera.rotation = 180
     time.sleep(0.5)  # Camera warm-up time
-    camera.capture('./pic/{}/test_{}.jpg'.format(str(datetime.date.today(), round(time.time()))))
+    camera.capture('./pic/{}/test_{}.jpg'.format(str(datetime.date.today()), round(time.time())))
 
 def recording():
     camera = picamera.PiCamera()
