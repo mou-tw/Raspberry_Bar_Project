@@ -6,8 +6,9 @@ Flask api remain a web service link for IOT usage.
 ## NOTE
 
 The requirements.txt file should list all Python libraries that your notebooks depend on, and they will be installed using:
+```
 $ pip install -r requirements.txt
-
+```
 ## prototype machine
 
 ![alt](https://github.com/mou-tw/Raspberry_Bar_Project/blob/master/Pi.gif)
