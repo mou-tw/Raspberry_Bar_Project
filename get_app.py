@@ -1,8 +1,8 @@
 import threading
-from lcd_print import lcd_print_main
-from buzzer import familymart_ringo
-from camera_main import take_photo
-from relay_func import relay_run
+from utils.lcd_print import lcd_print_main
+from utils.buzzer import familymart_ringo
+from utils.camera_main import take_photo
+from utils.relay_func import relay_run
 
 def get_main_func():
     take_photo()
